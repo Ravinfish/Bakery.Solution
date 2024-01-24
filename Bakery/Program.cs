@@ -1,7 +1,13 @@
-class Program
+using System;
+using Bakery.Models;
+
+namespace Bakery
 {
-  static void Main()
+  class Program
   {
-    // We'll add user interface code here.
+    static void Main()
+    {
+      
+    }
   }
 }
