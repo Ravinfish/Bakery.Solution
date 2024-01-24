@@ -31,5 +31,13 @@ namespace Bakery.Tests
       newBread.Order = newOrder;
       Assert.AreEqual(newOrder, newBread.Order);
     }
+
+    [TestMethod]
+    public void  CalPrice_DeterminesPriceByOrderLessThanOne_Int()
+    {
+    Bread noOrder = new Bread(0);
+    int BreadOrder = noOrder.CalcPrice();
+    Assert.AreEqual(0, BreadOrder);
+    }
   }
 }
