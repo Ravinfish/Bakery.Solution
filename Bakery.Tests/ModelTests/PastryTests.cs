@@ -23,6 +23,14 @@ namespace Bakery.Tests
       Assert.AreEqual(newOrder, result);
     }
 
+    [TestMethod]
+    public void SetPastryOrder_SetsValueOfOrder_Void()
+    {
+      int newOrder = 2;
+      Pastry newPastry = new Pastry(2);
+      newPastry.Order = newOrder;
+      Assert.AreEqual(newOrder, newPastry.Order);
+    }
 
   }
 }
