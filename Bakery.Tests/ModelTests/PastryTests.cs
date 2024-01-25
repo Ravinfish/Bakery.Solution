@@ -40,5 +40,13 @@ namespace Bakery.Tests
     Assert.AreEqual(0, PastryOrder);
     }
 
+    [TestMethod]
+    public void CalcPrice_DeterminesPriceOfOrderOfOne_Int()
+    {
+      Pastry newOrder = new Pastry(1);
+      int pastryOrder = newOrder.CalcPrice();
+      Assert.AreEqual(2, pastryOrder);
+    }
+
   }
 }
