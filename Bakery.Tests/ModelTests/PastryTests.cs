@@ -26,8 +26,8 @@ namespace Bakery.Tests
     [TestMethod]
     public void SetPastryOrder_SetsValueOfOrder_Void()
     {
-      int newOrder = 2;
-      Pastry newPastry = new Pastry(2);
+      int newOrder = 1;
+      Pastry newPastry = new Pastry(1);
       newPastry.Order = newOrder;
       Assert.AreEqual(newOrder, newPastry.Order);
     }
@@ -46,6 +46,14 @@ namespace Bakery.Tests
       Pastry newOrder = new Pastry(1);
       int pastryOrder = newOrder.CalcPrice();
       Assert.AreEqual(2, pastryOrder);
+    }
+
+    [TestMethod]
+    public void CalcPrice_DeterminesPriceByOrderOfFour_Int()
+    {
+      Pastry newOrder = new Pastry(4);
+      int pastryOrder = newOrder.CalcPrice();
+      Assert.AreEqual(6, pastryOrder);
     }
 
   }
