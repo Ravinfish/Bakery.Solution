@@ -2,19 +2,20 @@
 
 #### By Ravin Fisher
 
-#### A C# console application for a bakery to buy bread with a deal of Buy 2, get  1 free. Or You can buy a pastry with a deal of buy 3 get one free.
+#### Code Review for Epicodus. A C# console application using TDD with MSTest showcasing use of  Classes, Namespaces, auto-implemented properties and methods.
 
 ## Technologies Used
 
-* React
-* HTML
-* CSS
-* JavaScript
-* Webpack
+* TDD
+* MSTest
+* C#
+* RGR Workflow
+* .Net
+* Git
 
 ## Description
 
-This is a web application that lets you manage the store Lego inventory. You can see the list of product for sale, add items to your cart, modify current inventory as well as add new inventory to the list. 
+This is a console application that will allow you to purchase either bread or a pastries and calcualte a price based off of quantity. Bread has a deal of buy 2 get one free and Pastry has a deal of buy 3 get one free.
 
 ## Setup/Installation Requirements
 
