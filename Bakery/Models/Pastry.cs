@@ -31,6 +31,10 @@ namespace Bakery.Models
         }
       }
     }
+    public void UpdateOrder(int addToOrder)
+    {
+      Order = Order + addToOrder;
+    }
   }
 
 }
