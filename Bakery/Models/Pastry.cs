@@ -1,5 +1,3 @@
-using System.Security.Cryptography.X509Certificates;
-
 namespace Bakery.Models
 {
 
@@ -19,21 +17,14 @@ namespace Bakery.Models
       }
       else
       {
-        if (Order % 4 == 0)
-        {
-          int dealOrder = (Order - (Order /  4));
-          int breadTotalCost = dealOrder * 2;
-          return breadTotalCost;
-        }
-        else
-        {
-          return Order * 2;
-        }
+        int pastryDeal = Order / 4;
+        int pastryTotalCost = (Order - pastryDeal) * 2;
+        return pastryTotalCost;
       }
     }
     public void UpdateOrder(int addToOrder)
     {
-      Order = Order + addToOrder;
+      Order += addToOrder;
     }
   }
 

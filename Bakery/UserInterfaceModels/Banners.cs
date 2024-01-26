@@ -11,23 +11,5 @@ namespace Bakery.UserInterfaceModels
         ";
   }
 
-  class GoodbyeBanner
-  {
-    public static string Bye { get; } = @"
- BBBBBB  YY   YY  EEEEEE
- BBBBBB  YY   YY  EEEEEE
- BB   BB YY   YY  EE
- BB   BB  YY YY   EE
- BBBBBB     YY    EEEEEE
- BB    BB   YY    EE
- BB    BB   YY    EE 
- BBBBBB     YY    EEEEEE
- BBBBBB     YY    EEEEEE
-        ";
-  }
 
-  class SubMenuBanner
-  {
-    // SubMenuBanner code here.
-  }
 }
